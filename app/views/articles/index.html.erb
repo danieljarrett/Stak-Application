@@ -1,0 +1,17 @@
+<h1>Article Index</h1>
+
+<ul>
+	<% @articles.each do |article| %>
+		<li>
+			<a href='/articles/<%= article.id %>/show'>Show</a>
+			<a href='/articles/<%= article.id %>/edit'>Edit</a>
+			<form action='/articles/<%= article.id %>/delete' method='POST'>
+				<input type='hidden' name='_method' value='DELETE'>
+				<button type='submit'>Delete</button>
+			</form>
+			[<%= article.id %>] - <%= article.body %> - <%= article.created_at %>
+		</li>
+	<% end %>
+</ul>
+
+<a href='/articles/new'>New</a>

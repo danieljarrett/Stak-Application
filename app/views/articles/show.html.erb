@@ -1,0 +1,17 @@
+<h1>Article #<%= @article.id %></h1>
+
+<p>
+	&quot;<%= @article.body %>&quot;<br>
+	&ndash; <%= @article.tagline %>
+</p>
+
+<p>
+	Submitted by <%= @article.submitter %>
+</p>
+
+<a href='/articles/index'>Back</a>
+<a href='/articles/<%= @article.id %>/edit'>Edit</a>
+<form action='/articles/<%= @article.id %>/delete' method='POST'>
+	<input type='hidden' name='_method' value='DELETE'>
+	<button type='submit'>Delete</button>
+</form>

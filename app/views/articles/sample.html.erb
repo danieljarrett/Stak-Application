@@ -1,0 +1,36 @@
+<p>
+	This is a sample page and
+	<%= @noun %> is an arbitrary instance variable.
+</p>
+
+<p>
+	Ruby Version:<br>
+	<%= RUBY_VERSION %>
+</p>
+
+<p>
+	Environment:<br>
+	<% @env.each do |k, v| %>
+		<%= "#{k}: #{v}" %><br>
+	<% end %>
+</p>
+
+<p>
+	Request Params:<br>
+	<%= @request.params %>
+</p>
+
+<p>
+	Params:<br>
+	<%= params %>
+</p>
+
+<p>
+	User Agent:<br>
+	<%= @ua %>
+</p>
+
+<p>
+	A Local:<br>
+	<%= a_local %>
+</p>

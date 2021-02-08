@@ -1,0 +1,37 @@
+a {
+	color: #00F;
+}
+
+body * {
+	font-family: Times;
+	font-size: 1em;
+}
+
+button {
+	background: transparent;
+	border: 0px;
+	color: #00F;
+	cursor: pointer;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	text-decoration: underline;
+}
+
+div {
+	background: #EEEEEE;
+	padding: 15px;
+}
+
+form {
+	display: inline;
+}
+
+ul {
+	list-style-type: none;
+	margin-left: -40px; 
+}
+
+input, textarea {
+	display: block;
+}

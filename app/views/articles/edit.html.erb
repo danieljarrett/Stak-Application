@@ -1,0 +1,12 @@
+<h1>Edit Quote</h1>
+
+<form action='/articles/<%= @article.id %>/update' method='POST'>
+	<input type='hidden' name='_method' value='PUT'>
+	Body:
+	<textarea rows='5' cols='30' name='article[body]'><%= @article.body %></textarea>
+	Tagline:
+	<input type='text' name='article[tagline]' value='<%= @article.tagline %>'>
+	Submitter:
+	<input type='text' name='article[submitter]' value='<%= @article.submitter %>'>
+	<button type='submit'>Update</button>
+</form>

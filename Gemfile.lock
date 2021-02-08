@@ -1,0 +1,37 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    celluloid (0.16.0)
+      timers (~> 4.0.0)
+    erubis (2.7.0)
+    ffi (1.9.6)
+    hitimes (1.2.2)
+    http_parser.rb (0.5.3)
+    listen (2.8.5)
+      celluloid (>= 0.15.2)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+    pill (0.5.1)
+      http_parser.rb (~> 0.5.3)
+    rack (1.6.0)
+    rb-fsevent (0.9.4)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
+    rerun (0.10.0)
+      listen (~> 2.7, >= 2.7.3)
+    sqlite3 (1.3.10)
+    stak (0.4.2)
+      erubis
+      rack
+      sqlite3
+    timers (4.0.1)
+      hitimes
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  pill (= 0.5.1)
+  rerun
+  sqlite3
+  stak (= 0.4.2)
